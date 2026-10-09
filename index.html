@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mehmet Salih Uçak</h1>
+        <p>Management Information Systems Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="images/profile.jpg"
+                 alt="My profile photo"
+                 width="150"
+                 height="150">
+
+            <p>
+                I am a student studying Management Information Systems.
+                My goal is to become a software developer.
+                I am interested in programming and improving my
+                software development skills.
+            </p>
+        </section>
+
+        <section id="courses">
+            <h2>My Courses</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Section</th>
+                        <th>Credit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FCC109</td>
+                        <td>Mathematics</td>
+                        <td>7</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>IMS201</td>
+                        <td>Data Structure and Database Management Systems</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>IMS207</td>
+                        <td>Web Design and Internet Programming</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>IMS209</td>
+                        <td>Marketing Management</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>IMS259</td>
+                        <td>Business Process Analysis</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>IMS261</td>
+                        <td>Organizational Data Management</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>URE209</td>
+                        <td>Ataturk's Principles and History of Revolution I</td>
+                        <td>21</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Email:
+                <a href="mailto:mehmetsalihucak@gmail.com">
+                    mehmetsalihucak@gmail.com
+                </a>
+            </p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="question">Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message"
+                              rows="5" cols="40"></textarea>
+                </p>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Mehmet Salih Uçak</p>
+    </footer>
+
+</body>
+</html>
